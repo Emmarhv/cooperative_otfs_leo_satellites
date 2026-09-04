@@ -1,4 +1,4 @@
-# Cooperative Waveform Transmission and Design for LEO Satellites -- Code Repository
+# Cooperative Waveform Transmission and Design for LEO Satellites
 
 This repository contains the MATLAB source code and result files associated with the
 Bachelor Thesis *"Cooperative Waveform Transmission and Design for LEO Satellites"*
@@ -37,14 +37,14 @@ Two independent levels of reproduction are supported.
 ### 1. Reproduce the thesis figures and tables (recommended)
 
 This regenerates every figure and table reported in the thesis directly from the frozen
-result files in `results/`. No simulation is executed; this completes in seconds.
+result files in `results/`. No simulation is executed, this completes in seconds.
 
 ```matlab
 run('pipeline/main/run_final_reporting.m')
 ```
 
 Additional scripts in `pipeline/main/` regenerate specific figure sets (e.g.
-`run_sensitivity_reporting.m`, `run_load_tradeoff_pipeline.m` -- see comments at the top
+`run_sensitivity_reporting.m`, `run_load_tradeoff_pipeline.m` - see comments at the top
 of each file).
 
 ### 2. Audit or reconstruct the consolidated result files
@@ -66,7 +66,7 @@ run('pipeline/validation/run_official_no_compensation_validation.m')
 run('pipeline/validation/run_official_proposal_validation.m')
 ```
 
-### Running a fresh Monte Carlo simulation
+### Running Monte Carlo simulation
 
 The scripts in `pipeline/main/` (e.g. `main_baseline.m`, `main_different_grid.m`,
 `main_no_compensation.m`) can be run directly to generate new results with the production
