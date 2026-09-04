@@ -13,6 +13,7 @@ The repository version corresponding to the thesis submission is tagged `v1.0-tf
 | `pipeline/` | Final MATLAB simulation, validation and reporting code. |
 | `results/` | Frozen `.mat` result files, generated figures (PNG/PDF/FIG) and tables (CSV). |
 | `archive/` | Historical result files retained to support baseline validation and to reconstruct the consolidated result files. Not part of the primary execution path. |
+| `ARCHITECTURE.md` | Per-file reference: what every script and function in `pipeline/` does, and the exact command to run each entry-point script. |
 
 ### `pipeline/` contents
 
@@ -22,6 +23,10 @@ The repository version corresponding to the thesis submission is tagged `v1.0-tf
 | `reconstruction/` | Scripts that rebuild the consolidated result files (`final_comparison_results.mat`, `load_tradeoff_official_results.mat`) from `archive/`. Not required to reproduce thesis figures -- only for auditing how those files were assembled. |
 | `validation/` | Regression checks of the simulation engines against historical reference data in `archive/`. |
 | `config/`, `channel/`, `compensation/`, `modulation/`, `otfs/`, `receiver/`, `metrics/`, `utils/`, `framing/`, `mapper/`, `resource_allocation/`, `operators/`, `timing_residual/`, `los_channel_noise/` | Supporting functions used by the scripts above. |
+
+For a description of every individual file in `pipeline/` (what it does, and
+the exact command to run each entry-point script on its own), see
+[`ARCHITECTURE.md`](ARCHITECTURE.md).
 
 ## Software requirements
 
